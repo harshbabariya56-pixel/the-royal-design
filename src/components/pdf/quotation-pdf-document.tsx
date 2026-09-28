@@ -262,12 +262,12 @@ const styles = StyleSheet.create({
   grandTotalLabel: {
     fontSize: 10,
     fontWeight: "bold",
-    color: colors.gold,
+    color: colors.white,
   },
   grandTotalValue: {
     fontSize: 10,
     fontWeight: "bold",
-    color: colors.gold,
+    color: colors.white,
   },
   paymentTable: {
     marginTop: 8,
