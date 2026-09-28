@@ -16,7 +16,7 @@ import { formatDate, formatPaymentScheduleValue, formatPdfCurrency } from "@/lib
 const colors = {
   black: "#1A1A1A",
   /** Soft charcoal for table/payment headers — matches logo, not pure black */
-  header: "#3A3540",
+  header: "#333333",
   gold: "#6E6874",
   goldDark: "#4A4450",
   muted: "#6B6570",
