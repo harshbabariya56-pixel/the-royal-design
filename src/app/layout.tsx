@@ -3,8 +3,8 @@ import { AppHeader } from "@/components/layout/app-header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Royal Design — Quotation Maker",
-  description: "Professional interior design quotation maker by The Royal Design",
+  title: "The Royal Interior Studio — Quotation Maker",
+  description: "Professional interior design quotation maker by The Royal Interior Studio",
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ import { calculateRowAmount } from "@/lib/size-utils";
 import { defaultValidTillDate, generateId } from "@/lib/utils";
 
 export const DEFAULT_COMPANY: CompanyInfo = {
-  name: "The Royal Design",
+  name: "The Royal Interior Studio",
   tagline: "Interior Design Studio",
   address:
     "603, Vihav CBD, Bhayli, Vadodara - 391410\n401-c Sun South Trade, Gala Gymkhana Rd., South Bopal, Ahmedabad",
