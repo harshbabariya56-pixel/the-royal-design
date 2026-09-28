@@ -1,0 +1,39 @@
+---
+description: The Royal Design — project context, accounts, deploy (read first)
+alwaysApply: true
+---
+
+# The Royal Design — Project Context
+
+**Always read `.cursor/project.json` in this workspace before git push, deploy, or auth-related tasks.**
+
+This project lives in folder **`the-royal-design`**. Settings apply **only to this workspace** — never reuse Build 4 Atelier (`Test` / `build4`) credentials or remotes here.
+
+## Accounts (use only these)
+
+| Platform | Account |
+|----------|---------|
+| GitHub | `harshbabariya56-pixel` |
+| GitHub repo | `harshbabariya56-pixel/the-royal-design` |
+| Vercel | `harshbabariya56-pixel` (CLI: `harshbabariya56-2730`, team: `harsh74`) |
+
+**Never use:** `harshbabaria`, `harshinmotionmd` for this project.
+
+## Company
+
+- Name: The Royal Design
+- Phone: 81407 54393
+- Website: www.theroyalinteriorstudio.com
+- Addresses: Vadodara (Vihav CBD) + Ahmedabad (Sun South Trade, South Bopal)
+- Brand accent: `#6E6874` (charcoal/slate from logo)
+- PDF currency: `Rs.` not `₹`
+
+## Git
+
+- Remote: `https://github.com/harshbabariya56-pixel/the-royal-design.git`
+- Author: `harshbabariya56-pixel <306111431+harshbabariya56-pixel@users.noreply.github.com>`
+- Run `.cursor/setup.sh` if identity/remote is wrong
+
+## Secrets
+
+- `DATABASE_URL` only in `.env.local` (gitignored)

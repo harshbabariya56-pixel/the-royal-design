@@ -1,0 +1,49 @@
+{
+  "projectName": "The Royal Design Quotation Maker",
+  "workspaceFolder": "the-royal-design",
+  "localPath": "/Users/harshbabaria/Projects/the-royal-design",
+  "github": {
+    "account": "harshbabariya56-pixel",
+    "repo": "the-royal-design",
+    "remote": "https://github.com/harshbabariya56-pixel/the-royal-design.git",
+    "branch": "main"
+  },
+  "gitIdentity": {
+    "user.name": "harshbabariya56-pixel",
+    "user.email": "306111431+harshbabariya56-pixel@users.noreply.github.com"
+  },
+  "vercel": {
+    "account": "harshbabariya56-pixel",
+    "cliUsername": "harshbabariya56-2730",
+    "teamSlug": "harsh74",
+    "projectName": "the-royal-design",
+    "projectId": "",
+    "orgId": "team_iHDtBztrirUPaSCUMd1xzD8F",
+    "productionUrls": [],
+    "dashboard": ""
+  },
+  "database": {
+    "provider": "Neon Postgres",
+    "envVar": "DATABASE_URL",
+    "secretsFile": ".env.local",
+    "exampleFile": ".env.example",
+    "console": "https://console.neon.tech"
+  },
+  "company": {
+    "name": "The Royal Design",
+    "phone": "81407 54393",
+    "addresses": [
+      "603, Vihav CBD, Bhayli, Vadodara - 391410",
+      "401-c Sun South Trade, Gala Gymkhana Rd., South Bopal, Ahmedabad"
+    ],
+    "website": "www.theroyalinteriorstudio.com",
+    "logo": "/public/logo.png",
+    "brandAccent": "#6E6874"
+  },
+  "forbiddenAccounts": {
+    "github": ["harshbabaria"],
+    "vercel": ["harshinmotionmd", "harshinmotionmd-6773"]
+  },
+  "statusLineScript": ".cursor/statusline.sh",
+  "setupScript": ".cursor/setup.sh"
+}

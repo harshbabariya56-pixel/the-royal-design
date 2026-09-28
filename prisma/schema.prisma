@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Full quotation payload stored as JSON for flexibility; indexed fields for list/search.
+model QuotationRecord {
+  id              String   @id
+  quotationNumber String   @unique
+  status          String   @default("draft")
+  clientName      String   @default("")
+  projectName     String   @default("")
+  grandTotal      Float    @default(0)
+  data            Json
+  createdAt       DateTime
+  updatedAt       DateTime
+
+  @@index([updatedAt])
+  @@index([status])
+  @@map("quotations")
+}
