@@ -15,6 +15,8 @@ import { formatDate, formatPaymentScheduleValue, formatPdfCurrency } from "@/lib
 /** The Royal Design brand palette (logo charcoal / slate) */
 const colors = {
   black: "#1A1A1A",
+  /** Soft charcoal for table/payment headers — matches logo, not pure black */
+  header: "#3A3540",
   gold: "#6E6874",
   goldDark: "#4A4450",
   muted: "#6B6570",
@@ -163,7 +165,7 @@ const styles = StyleSheet.create({
   },
   tableHeader: {
     flexDirection: "row",
-    backgroundColor: colors.black,
+    backgroundColor: colors.header,
     paddingVertical: 6,
     paddingHorizontal: 4,
   },
@@ -257,7 +259,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     paddingVertical: 9,
     paddingHorizontal: 10,
-    backgroundColor: colors.black,
+    backgroundColor: colors.header,
   },
   grandTotalLabel: {
     fontSize: 10,
@@ -276,7 +278,7 @@ const styles = StyleSheet.create({
   },
   paymentHeader: {
     flexDirection: "row",
-    backgroundColor: colors.black,
+    backgroundColor: colors.header,
     paddingVertical: 5,
     paddingHorizontal: 8,
   },
