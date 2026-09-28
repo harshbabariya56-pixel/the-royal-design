@@ -9,7 +9,7 @@ export function AppHeader() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
-            alt="Build 4 Atelier"
+            alt="The Royal Design"
             width={90}
             height={80}
             className="h-12 w-auto object-contain"

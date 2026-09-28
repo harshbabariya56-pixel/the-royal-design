@@ -17,13 +17,16 @@
     "cliUsername": "harshbabariya56-2730",
     "teamSlug": "harsh74",
     "projectName": "the-royal-design",
-    "projectId": "",
+    "projectId": "prj_VcBc4udJdLhjKiukVRKpV2sxXwur",
     "orgId": "team_iHDtBztrirUPaSCUMd1xzD8F",
-    "productionUrls": [],
-    "dashboard": ""
+    "productionUrls": [
+      "https://the-royal-design-swart.vercel.app"
+    ],
+    "dashboard": "https://vercel.com/harsh74/the-royal-design"
   },
   "database": {
     "provider": "Neon Postgres",
+    "projectId": "muddy-mode-73988726",
     "envVar": "DATABASE_URL",
     "secretsFile": ".env.local",
     "exampleFile": ".env.example",

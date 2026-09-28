@@ -39,5 +39,7 @@ next-env.d.ts
 # data
 /data/*.json
 !/data/.gitkeep
+
+# vercel (keep project link)
 .vercel/*
 !.vercel/project.json
