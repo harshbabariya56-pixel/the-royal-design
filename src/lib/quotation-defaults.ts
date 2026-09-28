@@ -111,17 +111,17 @@ export function createDefaultQuotation(quotationNumber: string): Quotation {
       {
         id: generateId(),
         milestone: "Booking Amount",
-        amount: 0,
+        amount: "",
       },
       {
         id: generateId(),
         milestone: "Mid-Project",
-        amount: 0,
+        amount: "",
       },
       {
         id: generateId(),
         milestone: "Final Handover",
-        amount: 0,
+        amount: "",
       },
     ],
     termsAndConditions: [...DEFAULT_TERMS],
@@ -160,10 +160,20 @@ export function recalculateQuotation(quotation: Quotation): Quotation {
   const gstAmount = Math.round((taxableAmount * quotation.summary.gstPercent) / 100);
   const grandTotal = taxableAmount + gstAmount;
 
+  // Normalize payment amounts (legacy numeric → string)
+  const paymentSchedule = (quotation.paymentSchedule || []).map((item) => {
+    const raw = item.amount as string | number;
+    return {
+      ...item,
+      amount: typeof raw === "number" ? (raw ? String(raw) : "") : String(raw ?? ""),
+    };
+  });
+
   return {
     ...quotation,
     validTill: quotation.validTill || defaultValidTillDate(new Date(quotation.createdAt)),
     sections,
+    paymentSchedule,
     summary: {
       ...quotation.summary,
       subtotal,

@@ -253,7 +253,7 @@ export function useQuotationForm(initial: Quotation) {
       ...prev,
       paymentSchedule: [
         ...prev.paymentSchedule,
-        { id: generateId(), milestone: "", amount: 0 },
+        { id: generateId(), milestone: "", amount: "" },
       ],
     }));
   }, [update]);

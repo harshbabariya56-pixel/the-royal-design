@@ -10,7 +10,7 @@ import {
 } from "@react-pdf/renderer";
 import type { Quotation } from "@/types/quotation.types";
 import { DEFAULT_COMPANY } from "@/lib/quotation-defaults";
-import { formatDate, formatPdfCurrency } from "@/lib/utils";
+import { formatDate, formatPaymentScheduleValue, formatPdfCurrency } from "@/lib/utils";
 
 /** The Royal Design brand palette (logo charcoal / slate) */
 const colors = {
@@ -590,7 +590,7 @@ export function QuotationPDFDocument({
                   <View key={item.id} style={styles.paymentRow}>
                     <Text style={[styles.tableCell, styles.paymentCol1]}>{item.milestone}</Text>
                     <Text style={[styles.tableCell, styles.paymentCol2]}>
-                      {formatPdfCurrency(item.amount)}
+                      {formatPaymentScheduleValue(item.amount)}
                     </Text>
                   </View>
                 ))}

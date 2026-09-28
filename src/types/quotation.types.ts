@@ -32,7 +32,8 @@ export interface ProjectDetails {
 export interface PaymentScheduleItem {
   id: string;
   milestone: string;
-  amount: number;
+  /** Free text — amount (e.g. 50000), percentage (e.g. 30%), or any label */
+  amount: string;
 }
 
 export interface CompanyInfo {

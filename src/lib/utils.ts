@@ -21,6 +21,18 @@ export function formatPdfCurrency(amount: number): string {
   return `Rs. ${formatted}`;
 }
 
+/** Payment schedule value: keep %, labels as typed; format plain numbers as Rs. */
+export function formatPaymentScheduleValue(value: string | number | null | undefined): string {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "—";
+  if (/%/.test(raw) || /[a-zA-Z]/.test(raw)) return raw;
+  const num = Number(raw.replace(/,/g, ""));
+  if (!Number.isNaN(num) && /^[\d,.\s]+$/.test(raw)) {
+    return formatPdfCurrency(num);
+  }
+  return raw;
+}
+
 export function formatDate(date: string | Date): string {
   return new Intl.DateTimeFormat("en-IN", {
     day: "2-digit",

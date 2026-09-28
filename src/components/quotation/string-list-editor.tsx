@@ -60,7 +60,7 @@ interface PaymentScheduleEditorProps {
   items: {
     id: string;
     milestone: string;
-    amount: number;
+    amount: string;
   }[];
   onUpdate: (id: string, field: string, value: string | number) => void;
   onAdd: () => void;
@@ -85,13 +85,12 @@ export function PaymentScheduleEditor({ items, onUpdate, onAdd, onRemove }: Paym
               />
             </div>
             <div className="space-y-1">
-              <Label className="text-xs">Amount (₹)</Label>
+              <Label className="text-xs">Amount / %</Label>
               <Input
-                type="number"
-                min={0}
-                value={item.amount || ""}
-                onChange={(e) => onUpdate(item.id, "amount", parseFloat(e.target.value) || 0)}
-                placeholder="0"
+                type="text"
+                value={item.amount}
+                onChange={(e) => onUpdate(item.id, "amount", e.target.value)}
+                placeholder="e.g. 50000 or 30%"
               />
             </div>
             <div className="flex items-end">
